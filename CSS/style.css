@@ -1,0 +1,12 @@
+h2 {
+    text-align: center;
+}
+
+#btnPick {
+    margin-top: 50px
+}
+
+#additionalInformation {
+    visibility: hidden;
+    display: block;
+}
