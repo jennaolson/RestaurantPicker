@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -9,6 +10,9 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
+    <!--Other Imports-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="../CSS/style.css">
 
     <title>Restaurant Picker</title>
@@ -16,17 +20,32 @@
     <script src="../JS/script.js"></script>
 </head>
 
-<body>
-    <h2>Restaurant Picker</h2>
-    <div id="btnPick" class="center-block text-center">
-        <button type="button" class="btn btn-lg"> Pick a Place! </button> </br></br>
-        <button type="button" id="btnAdditionalInformation" class="btn btn-md" onclick="additionalInformation()"> Enter Additional Information </button>
+<body background="../joji.jpg">
+    <div id="realBody">
+        <h2 id="header" class="shadow">Restaurant Picker</h2>
+        <div id="btnPick" class="center-block text-center">
+            <button type="button" class="homeButtons btn btn-lg" onclick="PickRestaurant()"> Pick a Place!
+            </button></br></br>
+            <button type="button" id="btnAdditionalInformation" class="homeButtons btn btn-md"
+                onclick="additionalInformation()"> Add
+                Additional Filters </button>
+        </div>
+        <div id="additionalInformation" class="border border-dark">
+            <h4><b>Additional Filters </b></h4></br>
+            Type of Food:
+            <select id="foodType">
+                <option value="american">American</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="chinese">Chinese</option>
+                <option value="italian">Italian</option>
+                <option value="other">Other</option>
+            </select></br></br>
+            <button type="button" class="btn btn-ms" onclick="PickRestaurantWithFilters()"> Submit </button>
+        </div>
+        <div id="pickedRestaurant">
+            <div id="restaurant" class="shadow"></div>
+        </div>
     </div>
-    <div id="additionalInformation" class="border border-dark">
-        
-    </div>
-
-    
 </body>
 
 </html>
