@@ -70,7 +70,8 @@ function PickRestaurant() {
         "Zen Box Izakaya",
         "The Dubliner Pub",
         "Panda Express",
-        "Domino's"
+        "Domino's",
+        "Happy Gnome"
     ];
 
     var restaurantIndex = Math.floor(Math.random() * allPossibleRestaurants.length);
@@ -100,7 +101,8 @@ function PickRestaurantWithFilters() {
         "Groveland Tap",
         "Snuffy's Malt Shop",
         "Patrick McGovern's Pub",
-        "The Dubliner Pub"
+        "The Dubliner Pub",
+        "Happy Gnome"
     ];
 
     breakfast = [
